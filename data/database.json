@@ -1,0 +1,609 @@
+{
+  "owners": [
+    {
+      "id": "vinay",
+      "name": "Vinay Kambhampalli",
+      "email": "kambhampallivinay1@gmail.com",
+      "role": "Co-Owner & Executive Lead",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      "id": "ds-owner",
+      "name": "Divyansh",
+      "email": "ds694206968@gmail.com",
+      "role": "Co-Owner & Executive Lead",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "title": "Obsidian Heavyweight Cyber Hoodie",
+      "slug": "obsidian-heavyweight-cyber-hoodie",
+      "price": 3499,
+      "originalPrice": 4299,
+      "costPrice": 1200,
+      "categoryId": "cat-2",
+      "description": "Constructed from 520 GSM custom-milled French terry cotton. Features reinforced double-needle seams, custom brushed titanium eyelets, and modular internal utility stash.",
+      "stock": 24,
+      "sku": "VNX-HD-001",
+      "images": [
+        "/src/assets/images/product_hoodie_cyber_1791891335053.jpg"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "tags": [
+        "Heavyweight",
+        "Best Seller",
+        "French Terry"
+      ],
+      "featured": true,
+      "status": "active",
+      "createdAt": "2026-10-10T12:00:00Z"
+    },
+    {
+      "id": "prod-2",
+      "title": "Architectural Modular Cargo Trousers",
+      "slug": "architectural-modular-cargo-trousers",
+      "price": 4999,
+      "originalPrice": 5999,
+      "costPrice": 1800,
+      "categoryId": "cat-3",
+      "description": "Ergonomically engineered ripstop technical cargo trousers featuring 6 magnetic snap utility pockets, articulated knee gussets, and quick-release FIDLOCK waist adjusters.",
+      "stock": 12,
+      "sku": "VNX-CG-002",
+      "images": [
+        "/src/assets/images/product_cargo_tech_1791891336522.jpg"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "tags": [
+        "Water Repellent",
+        "FIDLOCK",
+        "Articulated"
+      ],
+      "featured": true,
+      "status": "active",
+      "createdAt": "2026-10-09T14:30:00Z"
+    },
+    {
+      "id": "prod-3",
+      "title": "Matte Obsidian Tactical Bomber Jacket",
+      "slug": "matte-obsidian-tactical-bomber-jacket",
+      "price": 7999,
+      "originalPrice": 9499,
+      "costPrice": 2800,
+      "categoryId": "cat-1",
+      "description": "Constructed with Japanese high-density matte nylon twill, Primaloft thermal insulation, and dual heavy-gauge two-way YKK excella zippers. Designed for extreme urban weather.",
+      "stock": 6,
+      "sku": "VNX-BM-003",
+      "images": [
+        "/src/assets/images/product_jacket_bomber_1791891336245.jpg"
+      ],
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "tags": [
+        "Primaloft",
+        "Waterproof",
+        "Limited Run"
+      ],
+      "featured": true,
+      "status": "active",
+      "createdAt": "2026-10-08T09:15:00Z"
+    },
+    {
+      "id": "prod-4",
+      "title": "VELNIX Monolith Cyber Trench Coat",
+      "slug": "velnix-monolith-cyber-trench-coat",
+      "price": 11999,
+      "originalPrice": 13999,
+      "costPrice": 4200,
+      "categoryId": "cat-1",
+      "description": "Floor-skimming architectural silhouette in water-resistant bonded wool composite with storm flap closure, magnetic collar stay, and taped internal seams.",
+      "stock": 4,
+      "sku": "VNX-TC-004",
+      "images": [
+        "/src/assets/images/hero_velnix_campaign_1791891336301.jpg"
+      ],
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "tags": [
+        "Runway Drop",
+        "Bonded Wool",
+        "Low Stock"
+      ],
+      "featured": true,
+      "status": "active",
+      "createdAt": "2026-10-07T11:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Outerwear",
+      "slug": "outerwear",
+      "description": "Technical jackets, trench coats and modular bombers",
+      "displayOrder": 1
+    },
+    {
+      "id": "cat-2",
+      "name": "Hoodies & Knits",
+      "slug": "hoodies",
+      "description": "Heavyweight organic cottons and cyber-knit silhouettes",
+      "displayOrder": 2
+    },
+    {
+      "id": "cat-3",
+      "name": "Bottoms",
+      "slug": "bottoms",
+      "description": "Architectural cargo trousers, raw denims and relaxed trackwear",
+      "displayOrder": 3
+    },
+    {
+      "id": "cat-4",
+      "name": "Limited Drops",
+      "slug": "drops",
+      "description": "Numbered runway editions and bespoke technical apparel",
+      "displayOrder": 4
+    }
+  ],
+  "orders": [
+    {
+      "customerName": "Devon Kross",
+      "customerEmail": "devon.kross@urbancreative.com",
+      "customerPhone": "+91 98111 67899",
+      "shippingAddress": "14 Palm Avenue",
+      "city": "Bengaluru",
+      "postalCode": "560001",
+      "items": [
+        {
+          "productId": "prod-3",
+          "title": "Matte Obsidian Tactical Bomber Jacket",
+          "price": 6900,
+          "originalPrice": 7999,
+          "quantity": 1,
+          "size": "L",
+          "image": "/src/assets/images/product_jacket_bomber_1791891336245.jpg",
+          "negotiationId": "neg-301"
+        }
+      ],
+      "subtotal": 6900,
+      "discount": 0,
+      "total": 6900,
+      "paymentMethod": "COD",
+      "paymentStatus": "pending",
+      "status": "incoming",
+      "id": "ord-1791897349724",
+      "orderNumber": "VNX-1005",
+      "createdAt": "2026-10-13T13:15:49.724Z"
+    },
+    {
+      "id": "ord-1041",
+      "orderNumber": "VNX-1041",
+      "customerName": "Marcus Vance",
+      "customerEmail": "marcus.vance@studio.design",
+      "customerPhone": "+91 98201 23456",
+      "shippingAddress": "74 Hill Road, Bandra West",
+      "city": "Mumbai",
+      "postalCode": "400050",
+      "items": [
+        {
+          "productId": "prod-1",
+          "title": "Obsidian Heavyweight Cyber Hoodie",
+          "price": 3499,
+          "quantity": 1,
+          "size": "L",
+          "image": "/src/assets/images/product_hoodie_cyber_1791891335053.jpg"
+        }
+      ],
+      "subtotal": 3499,
+      "discount": 0,
+      "total": 3499,
+      "paymentMethod": "COD",
+      "paymentStatus": "pending",
+      "status": "incoming",
+      "notes": "Please call before delivery",
+      "createdAt": "2026-10-13T09:40:00Z",
+      "handledBy": null
+    },
+    {
+      "id": "ord-1042",
+      "orderNumber": "VNX-1042",
+      "customerName": "Elena Rostova",
+      "customerEmail": "elena.rostova@metaverse.io",
+      "customerPhone": "+91 98450 89122",
+      "shippingAddress": "100 Feet Road, Indiranagar",
+      "city": "Bengaluru",
+      "postalCode": "560038",
+      "items": [
+        {
+          "productId": "prod-3",
+          "title": "Matte Obsidian Tactical Bomber Jacket",
+          "price": 7999,
+          "quantity": 1,
+          "size": "M",
+          "image": "/src/assets/images/product_jacket_bomber_1791891336245.jpg"
+        },
+        {
+          "productId": "prod-2",
+          "title": "Architectural Modular Cargo Trousers",
+          "price": 4999,
+          "quantity": 1,
+          "size": "M",
+          "image": "/src/assets/images/product_cargo_tech_1791891336522.jpg"
+        }
+      ],
+      "subtotal": 12998,
+      "discount": 1950,
+      "couponCode": "LIGHTS15",
+      "total": 11048,
+      "paymentMethod": "CARD",
+      "paymentStatus": "paid",
+      "status": "accepted",
+      "trackingNumber": "DELHIVERY-VNX-994120",
+      "createdAt": "2026-10-12T15:20:00Z",
+      "handledBy": "vinay",
+      "handledByName": "Vinay Kambhampalli"
+    },
+    {
+      "id": "ord-1039",
+      "orderNumber": "VNX-1039",
+      "customerName": "Damon Cole",
+      "customerEmail": "damon.cole@apexcorp.com",
+      "customerPhone": "+91 99100 34567",
+      "shippingAddress": "Block C, Connaught Place",
+      "city": "Delhi",
+      "postalCode": "110001",
+      "items": [
+        {
+          "productId": "prod-4",
+          "title": "VELNIX Monolith Cyber Trench Coat",
+          "price": 11999,
+          "quantity": 1,
+          "size": "L",
+          "image": "/src/assets/images/hero_velnix_campaign_1791891336301.jpg"
+        }
+      ],
+      "subtotal": 11999,
+      "discount": 0,
+      "total": 11999,
+      "paymentMethod": "COD",
+      "paymentStatus": "pending",
+      "status": "declined",
+      "declineReason": "Suspected fraudulent telephone number and undeliverable shipping address.",
+      "createdAt": "2026-10-11T18:10:00Z",
+      "handledBy": "ds-owner",
+      "handledByName": "Divyansh"
+    },
+    {
+      "id": "ord-1038",
+      "orderNumber": "VNX-1038",
+      "customerName": "Sophia Lin",
+      "customerEmail": "sophia.lin@designworks.co",
+      "customerPhone": "+91 97000 78901",
+      "shippingAddress": "Road No. 36, Jubilee Hills",
+      "city": "Hyderabad",
+      "postalCode": "500033",
+      "items": [
+        {
+          "productId": "prod-2",
+          "title": "Architectural Modular Cargo Trousers",
+          "price": 4999,
+          "quantity": 1,
+          "size": "L",
+          "image": "/src/assets/images/product_cargo_tech_1791891336522.jpg"
+        }
+      ],
+      "subtotal": 4999,
+      "discount": 0,
+      "total": 4999,
+      "paymentMethod": "CARD",
+      "paymentStatus": "paid",
+      "status": "cancellation_requested",
+      "cancellationReason": "I accidentally ordered size Large instead of Medium. Need to cancel and place order for size Medium.",
+      "createdAt": "2026-10-12T11:05:00Z",
+      "handledBy": null
+    }
+  ],
+  "customerRequests": [
+    {
+      "id": "req-201",
+      "customerName": "Julian Croft",
+      "customerEmail": "julian.croft@soundlab.fm",
+      "customerPhone": "+91 98200 90211",
+      "requestType": "bespoke_design",
+      "subject": "Custom stage outerwear for European live tour",
+      "message": "Hello Vinay and Divyansh! We love the Monolith Cyber Trench silhouette. Can you produce 4 customized pieces with reflective silver stage embroidery and hidden mic transmitter pouches for our band?",
+      "budget": "₹60,000 - ₹90,000",
+      "status": "new",
+      "createdAt": "2026-10-13T06:15:00Z"
+    },
+    {
+      "id": "req-202",
+      "customerName": "Aria Chen",
+      "customerEmail": "aria.chen@zenithpr.com",
+      "customerPhone": "+91 98450 44198",
+      "requestType": "bulk_order",
+      "subject": "Corporate VIP gifting drop (30 Obsidian Hoodies)",
+      "message": "Looking to order 30 Obsidian Heavyweight Hoodies for our executive retreat with tonal debossed leather brand patches. What would the lead time be?",
+      "budget": "₹95,000",
+      "status": "in_review",
+      "responseNotes": "Under review by Divyansh. Can fulfill from incoming batch in 2 weeks.",
+      "handledBy": "ds-owner",
+      "handledByName": "Divyansh",
+      "createdAt": "2026-10-12T16:00:00Z"
+    }
+  ],
+  "negotiations": [
+    {
+      "id": "neg-301",
+      "productId": "prod-3",
+      "productTitle": "Matte Obsidian Tactical Bomber Jacket",
+      "productPrice": 7999,
+      "productImage": "/src/assets/images/product_jacket_bomber_1791891336245.jpg",
+      "customerName": "Devon Kross",
+      "customerEmail": "devon.kross@urbancreative.com",
+      "customerPhone": "+91 98111 67899",
+      "initialOffer": 6500,
+      "currentOffer": 7350,
+      "quantity": 1,
+      "status": "countered",
+      "messages": [
+        {
+          "id": "msg-1",
+          "sender": "customer",
+          "senderName": "Devon Kross",
+          "text": "Hey team VELNIX! Absolutely love this tactical bomber. Would you consider ₹6,500 for a quick purchase today?",
+          "offerPrice": 6500,
+          "timestamp": "2026-10-12T19:30:00Z"
+        },
+        {
+          "id": "msg-2",
+          "sender": "owner",
+          "senderName": "Vinay Kambhampalli",
+          "text": "Hey Devon, thanks for the love! Given the Japanese high-density nylon and Primaloft fill, our manufacturing cost is premium. The best we can counter-offer for a single unit is ₹7,200.",
+          "offerPrice": 7200,
+          "timestamp": "2026-10-12T20:10:00Z"
+        },
+        {
+          "id": "msg-3",
+          "sender": "customer",
+          "senderName": "Devon Kross",
+          "text": "Could we meet at ₹7,000 and I confirm right now?",
+          "offerPrice": 7000,
+          "timestamp": "2026-10-13T08:00:00Z"
+        },
+        {
+          "id": "msg-1791897340831",
+          "sender": "customer",
+          "senderName": "Devon Kross",
+          "text": "Can we agree on ₹6,900?",
+          "offerPrice": 6900,
+          "timestamp": "2026-10-13T13:15:40.831Z"
+        },
+        {
+          "id": "msg-1791897349709",
+          "sender": "owner",
+          "senderName": "Vinay Kambhampalli",
+          "text": "Deal accepted! Enjoy your limited edition piece.",
+          "timestamp": "2026-10-13T13:15:49.709Z"
+        },
+        {
+          "id": "msg-1791987905841",
+          "sender": "owner",
+          "senderName": "Vinay Kambhampalli",
+          "text": "Owner counter-offer: ₹7,350 proposed by Vinay Kambhampalli.",
+          "offerPrice": 7350,
+          "timestamp": "2026-10-14T14:25:05.841Z"
+        }
+      ],
+      "handledBy": "vinay",
+      "handledByName": "Vinay Kambhampalli",
+      "createdAt": "2026-10-12T19:30:00Z",
+      "updatedAt": "2026-10-14T14:25:05.841Z",
+      "latestCustomerOffer": 6900,
+      "agreedPrice": 6900,
+      "discountCodeIssued": "OFFER-AVAHR",
+      "latestOwnerCounter": 7350
+    },
+    {
+      "id": "neg-302",
+      "productId": "prod-1",
+      "productTitle": "Obsidian Heavyweight Cyber Hoodie",
+      "productPrice": 3499,
+      "productImage": "/src/assets/images/product_hoodie_cyber_1791891335053.jpg",
+      "customerName": "Tariq Malik",
+      "customerEmail": "tariq.malik@soundwave.net",
+      "customerPhone": "+91 99000 32144",
+      "initialOffer": 2800,
+      "currentOffer": 3000,
+      "quantity": 2,
+      "status": "accepted",
+      "agreedPrice": 3000,
+      "discountCodeIssued": "NEGOT-TM-3000",
+      "messages": [
+        {
+          "id": "msg-10",
+          "sender": "customer",
+          "senderName": "Tariq Malik",
+          "text": "I want to buy 2 hoodies (Size M and XL) if you can offer ₹2,800 each.",
+          "offerPrice": 2800,
+          "timestamp": "2026-10-11T14:00:00Z"
+        },
+        {
+          "id": "msg-11",
+          "sender": "owner",
+          "senderName": "Divyansh",
+          "text": "Since you are ordering 2 units, we can do ₹3,000 each. Deal accepted!",
+          "offerPrice": 3000,
+          "timestamp": "2026-10-11T14:45:00Z"
+        }
+      ],
+      "handledBy": "ds-owner",
+      "handledByName": "Divyansh",
+      "createdAt": "2026-10-11T14:00:00Z",
+      "updatedAt": "2026-10-11T14:45:00Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-1",
+      "name": "Elena Rostova",
+      "email": "elena.rostova@metaverse.io",
+      "phone": "+91 98450 89122",
+      "city": "Bengaluru",
+      "totalSpent": 35490,
+      "ordersCount": 3,
+      "tier": "VIP",
+      "lastOrderDate": "2026-10-12T15:20:00Z",
+      "createdAt": "2026-08-14T09:00:00Z"
+    },
+    {
+      "id": "cust-2",
+      "name": "Marcus Vance",
+      "email": "marcus.vance@studio.design",
+      "phone": "+91 98201 23456",
+      "city": "Mumbai",
+      "totalSpent": 3499,
+      "ordersCount": 1,
+      "tier": "New",
+      "lastOrderDate": "2026-10-13T09:40:00Z",
+      "createdAt": "2026-10-13T09:30:00Z"
+    },
+    {
+      "id": "cust-3",
+      "name": "Devon Kross",
+      "email": "devon.kross@urbancreative.com",
+      "phone": "+91 98111 67899",
+      "city": "Delhi",
+      "totalSpent": 19899,
+      "ordersCount": 3,
+      "tier": "Regular",
+      "lastOrderDate": "2026-10-13T13:15:49.724Z",
+      "createdAt": "2026-07-19T10:15:00Z"
+    }
+  ],
+  "settings": {
+    "branding": {
+      "brandName": "VELNIX.WEAR",
+      "tagline": "Haute Streetwear & Technical Aesthetics",
+      "monogram": "VNX",
+      "watermarkText": "VELNIX ARCHIVE 2026",
+      "contactEmail": "ds694206968@gmail.com",
+      "instagramHandle": "@velnix.wear"
+    },
+    "theme": {
+      "preset": "obsidian",
+      "backgroundStyle": "solid",
+      "accentColor": "#38bdf8",
+      "cardTone": "slate"
+    },
+    "festival": {
+      "active": true,
+      "type": "diwali",
+      "title": "Diwali Luxe Celebration Drop",
+      "bannerMessage": "FESTIVAL OF LIGHTS EXCLUSIVE: 15% OFF ALL TECHNICAL OUTERWEAR WITH CODE LIGHTS15",
+      "promoCode": "LIGHTS15",
+      "discountBadge": "15% OFF",
+      "showFloatingEffects": true
+    }
+  },
+  "discounts": [
+    {
+      "id": "disc-1",
+      "code": "LIGHTS15",
+      "discountType": "percentage",
+      "value": 15,
+      "minSpend": 3000,
+      "maxUses": 200,
+      "usedCount": 42,
+      "isActive": true,
+      "expiresAt": "2026-11-15T23:59:59Z",
+      "description": "15% Festive Celebration Discount on orders over ₹3,000"
+    },
+    {
+      "id": "disc-2",
+      "code": "VELNIX20",
+      "discountType": "percentage",
+      "value": 20,
+      "minSpend": 6000,
+      "maxUses": 100,
+      "usedCount": 18,
+      "isActive": true,
+      "expiresAt": "2026-12-31T23:59:59Z",
+      "description": "VIP Founder Privilege: 20% off for high-value orders over ₹6,000"
+    },
+    {
+      "id": "disc-3",
+      "code": "FIRST500",
+      "discountType": "fixed",
+      "value": 500,
+      "minSpend": 4000,
+      "maxUses": 50,
+      "usedCount": 31,
+      "isActive": true,
+      "expiresAt": "2026-11-30T23:59:59Z",
+      "description": "₹500 flat off on luxury drops"
+    },
+    {
+      "id": "disc-1791897349709",
+      "code": "OFFER-AVAHR",
+      "discountType": "fixed",
+      "value": 1099,
+      "minSpend": 6900,
+      "maxUses": 1,
+      "usedCount": 0,
+      "isActive": true,
+      "expiresAt": "2026-10-20T13:15:49.709Z",
+      "description": "Agreed negotiation price on Matte Obsidian Tactical Bomber Jacket for Devon Kross"
+    }
+  ],
+  "inventoryLogs": [
+    {
+      "id": "log-1791897349724-prod-3",
+      "productId": "prod-3",
+      "productTitle": "Matte Obsidian Tactical Bomber Jacket",
+      "action": "sale",
+      "delta": -1,
+      "newStock": 6,
+      "reason": "Customer order VNX-1005",
+      "by": "System Checkout",
+      "timestamp": "2026-10-13T13:15:49.724Z"
+    },
+    {
+      "id": "log-1",
+      "productId": "prod-1",
+      "productTitle": "Obsidian Heavyweight Cyber Hoodie",
+      "action": "restock",
+      "delta": 30,
+      "newStock": 25,
+      "reason": "Autumn batch delivery from Portugal facility",
+      "by": "Divyansh",
+      "timestamp": "2026-10-10T10:00:00Z"
+    },
+    {
+      "id": "log-2",
+      "productId": "prod-4",
+      "productTitle": "VELNIX Monolith Cyber Trench Coat",
+      "action": "sale",
+      "delta": -1,
+      "newStock": 4,
+      "reason": "VIP Runway order fulfillment",
+      "by": "Vinay Kambhampalli",
+      "timestamp": "2026-10-11T12:00:00Z"
+    }
+  ]
+}

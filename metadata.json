@@ -1,0 +1,6 @@
+{
+  "name": "VELNIX.WEAR — Luxury Store & Owner Lobby",
+  "description": "High-fashion streetwear e-commerce platform with an advanced, dual-owner command lobby for order management, customer negotiations, inventory, and real-time site customization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
