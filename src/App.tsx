@@ -26,6 +26,16 @@ import { StoreFooter } from './components/store/StoreFooter';
 import { OwnerLobby } from './components/owner/OwnerLobby';
 import { OwnerAuthModal } from './components/owner/OwnerAuthModal';
 import { CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
+import {
+  FALLBACK_PRODUCTS,
+  FALLBACK_CATEGORIES,
+  FALLBACK_SETTINGS,
+  FALLBACK_ORDERS,
+  FALLBACK_REQUESTS,
+  FALLBACK_NEGOTIATIONS,
+  FALLBACK_CUSTOMERS,
+  FALLBACK_DISCOUNTS
+} from './data/fallbackData';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -42,14 +52,14 @@ export default function App() {
     pin: '1234'
   });
 
-  // Data states
-  const [products, setProducts] = useState<Product[]>([]);
-  const [categories, setCategories] = useState<Category[]>([]);
-  const [orders, setOrders] = useState<Order[]>([]);
-  const [customerRequests, setCustomerRequests] = useState<CustomerRequest[]>([]);
-  const [negotiations, setNegotiations] = useState<Negotiation[]>([]);
-  const [customers, setCustomers] = useState<Customer[]>([]);
-  const [discounts, setDiscounts] = useState<Discount[]>([]);
+  // Data states (seeded with luxury fallback data so static hosts like GitHub Pages render immediately)
+  const [products, setProducts] = useState<Product[]>(FALLBACK_PRODUCTS);
+  const [categories, setCategories] = useState<Category[]>(FALLBACK_CATEGORIES);
+  const [orders, setOrders] = useState<Order[]>(FALLBACK_ORDERS);
+  const [customerRequests, setCustomerRequests] = useState<CustomerRequest[]>(FALLBACK_REQUESTS);
+  const [negotiations, setNegotiations] = useState<Negotiation[]>(FALLBACK_NEGOTIATIONS);
+  const [customers, setCustomers] = useState<Customer[]>(FALLBACK_CUSTOMERS);
+  const [discounts, setDiscounts] = useState<Discount[]>(FALLBACK_DISCOUNTS);
   const [stats, setStats] = useState<any>(null);
   const [counts, setCounts] = useState({
     incomingOrders: 0,
@@ -110,16 +120,16 @@ export default function App() {
         api.getDiscounts()
       ]);
 
-      setProducts(bootstrapData.products || []);
-      setCategories(bootstrapData.categories || []);
-      setSettings(bootstrapData.settings || settings);
-      setCounts(bootstrapData.counts || counts);
-      setStats(statsData);
-      setOrders(allOrders || []);
-      setCustomerRequests(allReqs || []);
-      setNegotiations(allNegs || []);
-      setCustomers(allCusts || []);
-      setDiscounts(allDiscs || []);
+      if (bootstrapData?.products?.length) setProducts(bootstrapData.products);
+      if (bootstrapData?.categories?.length) setCategories(bootstrapData.categories);
+      if (bootstrapData?.settings) setSettings(bootstrapData.settings);
+      if (bootstrapData?.counts) setCounts(bootstrapData.counts);
+      if (statsData) setStats(statsData);
+      if (allOrders) setOrders(allOrders);
+      if (allReqs) setCustomerRequests(allReqs);
+      if (allNegs) setNegotiations(allNegs);
+      if (allCusts) setCustomers(allCusts);
+      if (allDiscs) setDiscounts(allDiscs);
     } catch (e) {
       console.error('Error fetching database:', e);
     } finally {

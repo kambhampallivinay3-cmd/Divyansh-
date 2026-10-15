@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowDown, Flame, ArrowUpRight } from 'lucide-react';
 import { SiteSettings } from '../../types/store';
+import { resolveImageUrl } from '../../utils/imageHelper';
 
 interface HeroBannerProps {
   settings: SiteSettings;
@@ -17,7 +18,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
     <section className="relative w-full h-[540px] sm:h-[620px] overflow-hidden bg-neutral-950 flex items-end">
       {/* Editorial Background Image with Scrim */}
       <img
-        src="/src/assets/images/hero_velnix_campaign_1791891336301.jpg"
+        src={resolveImageUrl('/src/assets/images/hero_velnix_campaign_1791891336301.jpg')}
         alt="VELNIX.WEAR Campaign"
         className="absolute inset-0 w-full h-full object-cover object-center opacity-70 filter contrast-105"
         referrerPolicy="no-referrer"

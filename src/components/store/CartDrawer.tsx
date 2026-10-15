@@ -3,6 +3,7 @@ import { X, Trash2, Plus, Minus, ArrowRight, Tag, ShieldCheck, CheckCircle2 } fr
 import { OrderItem } from '../../types/store';
 import { api } from '../../services/api';
 import { formatINR } from '../../utils/currency';
+import { resolveImageUrl } from '../../utils/imageHelper';
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -138,7 +139,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     className="flex gap-3.5 p-3 bg-neutral-900/40 rounded-xl border border-neutral-800/80 items-center"
                   >
                     <img
-                      src={item.image}
+                      src={resolveImageUrl(item.image)}
                       alt={item.title}
                       className="w-16 h-16 object-cover rounded-lg bg-neutral-950"
                     />

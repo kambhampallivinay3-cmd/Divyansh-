@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X, ShoppingBag, CircleDollarSign, Check, ShieldCheck, Ruler, ArrowRight } from 'lucide-react';
 import { Product } from '../../types/store';
 import { formatINR } from '../../utils/currency';
+import { resolveImageUrl } from '../../utils/imageHelper';
 
 interface ProductDetailModalProps {
   product: Product | null;
@@ -35,7 +36,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         {/* Left: Product Image */}
         <div className="relative aspect-square md:aspect-auto bg-neutral-950 flex items-center justify-center overflow-hidden">
           <img
-            src={product.images[0]}
+            src={resolveImageUrl(product.images[0])}
             alt={product.title}
             className="w-full h-full object-cover"
           />

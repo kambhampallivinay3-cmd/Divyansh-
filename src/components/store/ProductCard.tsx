@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ShoppingBag, CircleDollarSign, Check, Eye } from 'lucide-react';
 import { Product } from '../../types/store';
 import { formatINR } from '../../utils/currency';
+import { resolveImageUrl } from '../../utils/imageHelper';
 
 interface ProductCardProps {
   product: Product;
@@ -33,7 +34,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       {/* Product Image Area */}
       <div className="relative aspect-[4/3] bg-neutral-950 overflow-hidden cursor-pointer" onClick={() => onViewDetails(product)}>
         <img
-          src={product.images[0]}
+          src={resolveImageUrl(product.images[0])}
           alt={product.title}
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
           referrerPolicy="no-referrer"

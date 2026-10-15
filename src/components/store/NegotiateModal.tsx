@@ -21,6 +21,7 @@ import {
 import { Product, Negotiation, NegotiationMessage } from '../../types/store';
 import { api } from '../../services/api';
 import { formatINR } from '../../utils/currency';
+import { resolveImageUrl } from '../../utils/imageHelper';
 
 interface NegotiateModalProps {
   product: Product | null;
@@ -417,7 +418,7 @@ export const NegotiateModal: React.FC<NegotiateModalProps> = ({
               {activeProduct ? (
                 <div className="flex items-center gap-4 p-4 bg-neutral-950 rounded-2xl border border-neutral-800">
                   <img
-                    src={activeProduct.images[0]}
+                    src={resolveImageUrl(activeProduct.images[0])}
                     alt={activeProduct.title}
                     className="w-20 h-20 object-cover rounded-xl border border-neutral-800 shrink-0"
                   />
@@ -700,7 +701,7 @@ export const NegotiateModal: React.FC<NegotiateModalProps> = ({
                         >
                           <div className="flex items-center gap-2.5">
                             <img
-                              src={neg.productImage}
+                              src={resolveImageUrl(neg.productImage)}
                               alt={neg.productTitle}
                               className="w-10 h-10 object-cover rounded-lg shrink-0 border border-neutral-800"
                             />
@@ -731,7 +732,7 @@ export const NegotiateModal: React.FC<NegotiateModalProps> = ({
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-3">
                             <img
-                              src={currentNeg.productImage}
+                              src={resolveImageUrl(currentNeg.productImage)}
                               alt={currentNeg.productTitle}
                               className="w-12 h-12 object-cover rounded-xl border border-neutral-800"
                             />

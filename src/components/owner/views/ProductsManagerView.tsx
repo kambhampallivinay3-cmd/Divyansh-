@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Product, Category, OwnerProfile } from '../../../types/store';
 import { api } from '../../../services/api';
 import { formatINR } from '../../../utils/currency';
+import { STATIC_IMAGES, resolveImageUrl } from '../../../utils/imageHelper';
 import { Plus, Edit2, Trash2, Eye, Sparkles, Check, X, Search, Image as ImageIcon } from 'lucide-react';
 
 interface ProductsManagerViewProps {
@@ -30,7 +31,7 @@ export const ProductsManagerView: React.FC<ProductsManagerViewProps> = ({
   const [stock, setStock] = useState<number>(20);
   const [sku, setSku] = useState('');
   const [description, setDescription] = useState('');
-  const [imageUrl, setImageUrl] = useState('/src/assets/images/product_hoodie_cyber_1791891335053.jpg');
+  const [imageUrl, setImageUrl] = useState(STATIC_IMAGES.hoodie);
   const [sizes, setSizes] = useState<string[]>(['S', 'M', 'L', 'XL']);
   const [featured, setFeatured] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -50,7 +51,7 @@ export const ProductsManagerView: React.FC<ProductsManagerViewProps> = ({
     setStock(25);
     setSku(`VNX-${Date.now().toString().slice(-4)}`);
     setDescription('');
-    setImageUrl('/src/assets/images/product_hoodie_cyber_1791891335053.jpg');
+    setImageUrl(STATIC_IMAGES.hoodie);
     setSizes(['S', 'M', 'L', 'XL']);
     setFeatured(false);
     setModalMode('add');
@@ -137,10 +138,10 @@ export const ProductsManagerView: React.FC<ProductsManagerViewProps> = ({
   };
 
   const availableImages = [
-    { label: 'Obsidian Hoodie', url: '/src/assets/images/product_hoodie_cyber_1791891335053.jpg' },
-    { label: 'Tactical Cargo', url: '/src/assets/images/product_cargo_tech_1791891336522.jpg' },
-    { label: 'Obsidian Bomber', url: '/src/assets/images/product_jacket_bomber_1791891336245.jpg' },
-    { label: 'Campaign Trench', url: '/src/assets/images/hero_velnix_campaign_1791891336301.jpg' }
+    { label: 'Obsidian Hoodie', url: STATIC_IMAGES.hoodie },
+    { label: 'Tactical Cargo', url: STATIC_IMAGES.cargo },
+    { label: 'Obsidian Bomber', url: STATIC_IMAGES.bomber },
+    { label: 'Campaign Trench', url: STATIC_IMAGES.trench }
   ];
 
   return (
@@ -201,7 +202,7 @@ export const ProductsManagerView: React.FC<ProductsManagerViewProps> = ({
                   <tr key={p.id} className="hover:bg-neutral-900/40 transition-colors">
                     <td className="p-4">
                       <div className="flex items-center gap-3">
-                        <img src={p.images[0]} alt={p.title} className="w-12 h-12 object-cover rounded-lg bg-neutral-900" />
+                        <img src={resolveImageUrl(p.images[0])} alt={p.title} className="w-12 h-12 object-cover rounded-lg bg-neutral-900" />
                         <div>
                           <div className="font-bold text-white line-clamp-1">{p.title}</div>
                           {p.featured && (
